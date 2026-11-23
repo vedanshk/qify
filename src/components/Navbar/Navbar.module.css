@@ -1,0 +1,18 @@
+.navbar {
+  background-color: var(--color-primary);
+  height: 74px;
+  padding: 0px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto; /* Adjust height to fit the content */
+    padding: 15px; /* Add padding for breathing room */
+    gap: 10px; /* Reduce the gap between elements */
+  }
+}

@@ -1,0 +1,90 @@
+/* General search input styling */
+.search {
+  padding: 14px 20px;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid var(--color-black);
+  font-family: var(--font-family);
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Wrapper for the search input and button */
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+/* Search button styling */
+.searchButton {
+  border-radius: 0px 8px 8px 0px;
+  padding: 14px 20px;
+  border: 1px solid var(--color-black);
+  border-left: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.search:focus {
+  outline: none; /* Prevents outline on focus in iOS */
+}
+.searchButton:focus {
+  outline: none; /* Prevents outline on focus in iOS */
+}
+
+/* For desktop */
+.wrapperdesktop {
+  display: none; /* Default is hidden */
+}
+
+/* For mobile */
+.wrappermobile {
+  display: flex; /* Flex layout for mobile */
+}
+
+.searchMobile {
+  width: 100%; /* Full width for mobile */
+}
+.searchDesktop {
+  width: 400px; /* Specific width for larger screens */
+}
+
+/* Show desktop search on screens wider than 768px */
+@media screen and (min-width: 768px) {
+  .wrapperdesktop {
+    display: flex; /* Show desktop search on larger screens */
+  }
+
+  .wrappermobile {
+    display: none; /* Hide mobile search on larger screens */
+  }
+}
+
+/* List element styling */
+.listElement {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Album title */
+.albumTitle {
+  font-size: 16px;
+}
+
+/* Album artists */
+.albumArtists {
+  font-size: 12px;
+}
