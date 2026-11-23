@@ -23,7 +23,7 @@ export default function Section({ title, data, showButton }) {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`${config.endpoint}/${data}`);
+      const response = await axios.get(`${config.endpoint}${data}`);
       setAlbums(response.data); // Store the response data
     } catch (err) {
       setError(err.response ? err.response.data.message : err.message);
